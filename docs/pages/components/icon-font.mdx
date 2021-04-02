@@ -1,0 +1,372 @@
+import {
+  component,
+  dependencies,
+  name,
+  peerDependencies,
+  version
+} from '@welcome-ui/icons.font/package.json'
+
+# IconFont
+
+<tagversion version={version} name={name} component={component} />
+
+## Install and import icon font
+
+<code language="bash">
+  {`yarn add @welcome-ui/icons.font ${Object.keys(peerDependencies).join(' ')}`}
+</code>
+<code language="bash">{`import { Icons } from '@welcome-ui/icons.font'`}</code>
+<br />
+or
+<code language="bash">{`import { IconFont } from '@welcome-ui/icons.font'`}</code>
+
+## Call Icon from Icons import
+
+```jsx row
+<Icons.Twitter />
+<Icons.Right />
+<Icons.Facebook />
+```
+
+## Call Icon from IconFont import
+
+```jsx row
+<IconFont name="facebook" />
+<IconFont name="left" />
+<IconFont name="twitter" />
+```
+
+## Available icons
+
+**Note**: You can click on an icon to copy its name.
+
+### Directions
+
+```jsx
+function() {
+  const icons = ['left', 'right', 'up', 'down']
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Actions
+
+```jsx
+function() {
+  const icons = [
+    'activity',
+    'add',
+    'archive',
+    'aspect_ratio_fill',
+    'aspect_ratio_fit',
+    'bulk',
+    'check',
+    'collapse',
+    'copy',
+    'cross',
+    'drag_and_drop',
+    'edit',
+    'eye',
+    'expand_text',
+    'expand',
+    'external_link',
+    'filters',
+    'get',
+    'heart',
+    'heart_outline',
+    'information',
+    'link',
+    'log_out',
+    'menu',
+    'more',
+    'notification',
+    'pin',
+    'play',
+    'play_outline',
+    'print',
+    'promote',
+    'refuse_candidate',
+    'remote',
+    'remove',
+    'reset',
+    'save',
+    'search',
+    'settings',
+    'share1',
+    'share2',
+    'trash',
+    'upload',
+    'video',
+    'write'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Appreciations
+
+```jsx
+function() {
+  const icons = [
+    'negative',
+    'positive',
+    'negative_outline',
+    'positive_outline',
+    'negative_straight',
+    'positive_straight'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Categories
+
+```jsx
+function() {
+  const icons = ['actions', 'cover_letter', 'details', 'resume', 'questions']
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Miscellaneous
+
+```jsx
+function() {
+  const icons = [
+    'address',
+    'alert',
+    'analytics',
+    'anniversary',
+    'attachment',
+    'avatar',
+    'bar_chart',
+    'birthday',
+    'burn',
+    'candidate_status',
+    'card_view',
+    'celebrate',
+    'clock',
+    'comment_outline',
+    'comment',
+    'contract',
+    'create',
+    'date',
+    'department',
+    'earth',
+    'education_level',
+    'email_outline',
+    'email',
+    'female',
+    'fingerprint',
+    'folder',
+    'information',
+    'in_progress_candidate',
+    'kanban',
+    'language',
+    'line_chart',
+    'location',
+    'male',
+    'mansanory',
+    'mention',
+    'new_candidate',
+    'offer_status',
+    'office',
+    'origine',
+    'phone_outline',
+    'phone',
+    'pictures',
+    'podcast',
+    'question',
+    'review_outline',
+    'review',
+    'salary',
+    'search_people',
+    'source',
+    'star',
+    'star_outline',
+    'subtitle',
+    'suitcase',
+    'tag',
+    'tags',
+    'teepee',
+    'update',
+    'video_camera',
+    'video_camera_2',
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Files
+
+```jsx
+function() {
+  const icons = [
+    'csv',
+    'doc',
+    'docx',
+    'eot',
+    'gif',
+    'jpeg',
+    'jpg',
+    'pdf',
+    'png',
+    'ppt',
+    'svg',
+    'ttf',
+    'txt',
+    'woff',
+    'woff2',
+    'xls',
+    'xlsx',
+    'zip'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### WTF
+
+```jsx
+function() {
+  const icons = [
+    'basketball',
+    'book',
+    'book2',
+    'bulb',
+    'buoy',
+    'caddy',
+    'calcul',
+    'camera',
+    'chevron',
+    'clipboard',
+    'coffee',
+    'compass',
+    'computer',
+    'credit_card',
+    'crescent_moon',
+    'crescent_moon_outline',
+    'cross_target',
+    'crown',
+    'diamond',
+    'dish',
+    'factory',
+    'flag',
+    'flag_pointed',
+    'gear',
+    'handshake',
+    'hard_hat',
+    'hashtag',
+    'headset',
+    'heart_shiny',
+    'house',
+    'justice_hammer',
+    'key',
+    'leaf',
+    'lock',
+    'lock_rounded',
+    'map',
+    'megaphone',
+    'mic',
+    'microship',
+    'money',
+    'mountain',
+    'music',
+    'paperplane',
+    'pencil',
+    'piechart',
+    'pizza',
+    'puzzle',
+    'puzzle_outline',
+    'refresh',
+    'shield',
+    'spanner',
+    'stackserver',
+    'sun',
+    'target',
+    'thumbup',
+    'tree',
+    'trophy'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Markdown
+
+```jsx
+function() {
+  const icons = [
+    'bold',
+    'code',
+    'code_block',
+    'heading',
+    'heading_1',
+    'heading_2',
+    'heading_3',
+    'heading_4',
+    'heading_5',
+    'heading_6',
+    'italic',
+    'link',
+    'unordered_list',
+    'ordered_list',
+    'quote',
+    'strikethrough',
+    'type',
+    'underline'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Table
+
+```jsx
+function() {
+  const icons = [
+    'table',
+    'table_column_add_after',
+    'table_column_add_before',
+    'table_column_remove',
+    'table_delete',
+    'table_divide',
+    'table_merge_cells',
+    'table_row_add_above',
+    'table_row_add_below',
+    'table_row_remove'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+### Social networks
+
+```jsx
+function() {
+  const icons = [
+    'behance',
+    'dribbble',
+    'facebook',
+    'github',
+    'instagram',
+    'linkedin',
+    'npm',
+    'pinterest',
+    'stackoverflow',
+    'twitch',
+    'twitter',
+    'xing',
+    'youtube'
+  ]
+  return IconsList({icons, isIconFont: true})
+}
+```
+
+## Dependencies
+
+<dependencies dependencies={dependencies} />
+
+## Peer dependencies
+
+<dependencies dependencies={peerDependencies} />

@@ -1,0 +1,18 @@
+.env
+dist/
+docs/out
+docs/.next
+.cache/
+node_modules/
+.DS_Store
+.size-snapshot.json
+yarn-error.log
+lerna-debug.log
+
+# Output of 'npm pack'
+*.tgz
+
+# Fonts
+packages/IconFont/fonts/*.svg
+packages/IconFont/fonts/*.ttf
+packages/IconFont/fonts/*.css
